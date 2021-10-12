@@ -1,0 +1,16 @@
+{
+   "Version":"2012-10-17",
+   "Statement":[
+      {
+         "Sid":"Route53LogsToCloudWatchLogs",
+         "Effect":"Allow",
+         "Principal":{
+            "Service":[
+               "route53.amazonaws.com"
+            ]
+         },
+         "Action":"logs:*",
+         "Resource":"arn:aws:logs:us-east-1:585584209241:log-group:/aws/route53/*"
+      }
+   ]
+}
